@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>allooo cantikk</title>
+  <meta name="description" content="Semangat">
+  <meta name="author" content="Heryoka">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/efekteks.css">
+  <link rel="stylesheet" href="css/responsif.css">
+  <link rel="stylesheet" href="css/gaktau.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>  
+  <div class="kontener2" id="kontener2">
+    <h1>allooo cantikk</h1>
+    <button class="tombol" id="tombol">tekann inii</button>
+  </div>
+
+  <div class="kontener" id="kontener">
+    <div class="dalemnya_kontener">
+      <h1 class="judul_halaman">kakaa</h1>
+      <a class="tombol_menu" onclick="klikMenu()"></a>
+      <section class="halaman1 dalemnya_halaman" onclick="PindahKeHalaman(0)">
+        <h1 class="judul_halaman">memeyy</h1>
+        <br>
+        <div class="ucapan1">
+          <p class="isiucapan1">"memeyy" ituu adalaa nama pnaggilann yangg lucuuu [kaya orangnya bjir]. akuuu awall awall kenall kakaa bener benerr kayaa orangg biasaa ajaa, tapii entaa kenapaa koo kakaa bisaa dekett yaa samaa akuu sekarangg, tapii akuu senengg siii karenaa bisaa dekett samaa bidadarii kayaa kakaaa. waktuu awall kenal sebenernyaa udaa falling in love with u si ka, cuma lebii baik diam saja akwkawak. dan asall kakaa tauu, namaa kakaa ituu indaahh layaknyaa bulann yang adaa di sanaa</p>
+        </div>
+      </section>
+      <section class="halaman2 dalemnya_halaman" onclick="PindahKeHalaman(1)">
+        <h1 class="judul_halaman">cantikk</h1>
+        <br>
+        <div class="ucapan2">
+          <p class="isiucapan2">"cantikk" ituu memangg sudaa adaa tertanamm di dalamm dirimuu kaaa, kakaa tidaa usaa insecuree yaaa, karenaa tampilann cantikk, indahh, lucuu, menggemaskann, pretty, pretty, cantikk, beautifull, ituu semuanyaa adaa di kakaaa ehehehe, ndaa usaa bilangg dirii kakaa tidaa pantes lagii, karenaa sekarangg adaa akuu yangg selaluu adaa buattt kakaaa merasaa lebiii pedee lagiii dannn lebiii tampilll hebattt di hadapan oranggg orangg dii luarr sanaaa</p>
+          </p>
+        </div>
+      </section>
+      <section class="halaman3 dalemnya_halaman" onclick="PindahKeHalaman(2)">
+        <h1 class="judul_halaman">sekalii</h1>
+        <br>
+        <div class="ucapan3">
+          <p class="isiucapan3">"sekali"punn kakaaa berpenampilann biasaa sajaa, kakaa selaluu menarikk di mataa kuuu. kakaa tauu ndaaa siii? adaa laguu yangg liriknyaa giniii "saat bahagiaku, duduk berdua dengan mu, hanyalah bersamamu" eheheheh, btw i like when talking to u. ooo iyaaaa, kakaa tauu ndaa siii? adaa sesuatuu yangg mauu akuu sampaiinnn keee kakaaa, karenaaa biarr sekaliann ajaa jadii akuu jadiin satuu deee coding an nyaaa. yaituuu, i have a ..... on u ehehehe. [isilah titik titik di samping, kalo nda nanti aku makin sayang, kalo diisi aku makin sayang sekali] ALAY AH, alaypyu ka</p>
+        </div>
+      </section>
+      <section class="halaman4 dalemnya_halaman" onclick="PindahKeHalaman(3)">
+        <h1 class="judul_halaman">kakaa memeyyy</h1>
+        <br>
+        <h1 id="waktu"></h1>
+        <script type="text/javascript">
+          document.write("<center>");
+          var hari = new Date();
+          var jam = hari.getHours();
+          if (jam >= 0 && jam < 12) {
+            document.write(
+              "<h1 class='ucapan'>morningg cantikk!</h1><p class='isiucapan'>kakaa jangan lupaa sarapann yaaa. and... love u ehehehe <3<p>"
+            );
+          } else if (jam == 12) {
+            document.write(
+              "<h1 class='ucapan'>good afternoon kaa!</h1><p class='isiucapan'>jangann lupaa mamamm siangg okayy? and... love u ehehehe <3<p>"
+            );
+          } else if (jam >= 12 && jam <= 17) {
+            document.write(
+              "<h1 class='ucapan'>siangg menjelang soree!</h1><p class='isiucapan'>sudaaa mauu soreee, jangann lupaa mandii. and... love u ehehehe <3<p>"
+            );
+          } else {
+            document.write(
+              "<h1 class='ucapan'>good nightt kaa!</h1><p class='isiucapan'>kakaa sudaaa melewatii harii inii dengann baikk, kakaa hebatt!! and last, the moon is beautifull, isn't it? hahaha, good nightt kaa have a sweet dreamss, and... love u ehehehe <3<p>"
+            );
+          }
+          document.write("</center>");
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById("waktu").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+      var waktu = new Date(),
+        menit = waktu.getMinutes().toString().length == 1 ? '0' + waktu.getMinutes() : waktu.getMinutes(),
+        jam = waktu.getHours().toString().length == 1 ? '0' + waktu.getHours() : waktu.getHours(),
+        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
+        bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
+          'November', 'Desember'
+        ],
+        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      return '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
+          waktu.getDay()] +
+        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
+        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2"> ' + jam + ':' +
+        menit + ' ' + ampm + ' </p>';
+
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      var audio = new Audio('');
+      $("#tombol").click(function () {
+        $("#kontener2").fadeOut();
+        $("#kontener").fadeIn("4000");
+        audio.play();
+      });
+    });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1)
+      }).add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+      }).add({
+        targets: '.ml1',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml2 .letter',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: 1400
+      }).add({
+        targets: '.ml2',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+</body>
+
+</html>
